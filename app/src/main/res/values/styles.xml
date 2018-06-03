@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Library item: to include album image, album text and artist text -->
+    <style name="LibraryItem">
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- Style for the albums aligned with the left side of the screen. -->
+    <style name="LeftSideAlbum">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- Style for the albums aligned with the right side of the screen. -->
+    <style name="RightSideAlbum">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- Style for the album titles/artists. -->
+    <style name="AlbumText">
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+
+</resources>

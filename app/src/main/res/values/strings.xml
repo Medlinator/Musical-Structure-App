@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="library_title">My Library</string>
+    <string name="album_title">Album</string>
+    <string name="one_of_us_is_the_killer">One of Us is the Killer</string>
+    <string name="the_dillinger_escape_plan">The Dillinger Escape Plan</string>
+    <string name="diamond_eyes">Diamond Eyes</string>
+    <string name="deftones">Deftones</string>
+    <string name="empty_black">Empty Black</string>
+    <string name="greyhaven">Greyhaven</string>
+    <string name="meridional">Meridional</string>
+    <string name="norma_jean">Norma Jean</string>
+    <string name="now_playing_song_title">Sweet Machine</string>
+</resources>
