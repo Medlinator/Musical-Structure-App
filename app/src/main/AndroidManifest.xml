@@ -18,15 +18,19 @@
         </activity>
         <activity
             android:name=".OneOfUsIsTheKillerActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/album_title" />
         <activity
             android:name=".DiamondEyesActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/album_title" />
         <activity
             android:name=".EmptyBlackActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/album_title" />
         <activity
             android:name=".MeridionalActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/album_title" />
     </application>
 

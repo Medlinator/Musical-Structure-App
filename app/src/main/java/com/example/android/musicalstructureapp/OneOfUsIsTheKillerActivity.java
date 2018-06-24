@@ -13,6 +13,8 @@ public class OneOfUsIsTheKillerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         // Create a list of songs.
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("The Dillinger Escape Plan", "Prancer"));

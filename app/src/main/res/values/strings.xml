@@ -11,4 +11,11 @@
     <string name="meridional">Meridional</string>
     <string name="norma_jean">Norma Jean</string>
     <string name="now_playing_song_title">Sweet Machine</string>
+    <string name="now_playing_album">Now Playing album cover art.</string>
+    <string name="now_playing_play_button">Now Playing play button.</string>
+    <string name="one_of_us_is_the_killer_content_desc">Cover art for the album One of Us is the Killer</string>
+    <string name="diamond_eyes_content_desc">Cover art for the album Diamond Eyes</string>
+    <string name="empty_black_content_desc">Cover art for the album Empty Black</string>
+    <string name="meridional_content_desc">Cover art for the album Meridional</string>
+    <string name="back_button_text">Go to My Library</string>
 </resources>

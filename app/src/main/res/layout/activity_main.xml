@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:cardElevation="8dp">
+        app:cardElevation="@dimen/card_elevation">
 
         <RelativeLayout
             android:id="@+id/now_playing"
@@ -22,20 +22,22 @@
 
             <ImageView
                 android:id="@+id/now_playing_album"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_margin="16dp"
+                android:layout_width="@dimen/now_playing_album_width"
+                android:layout_height="@dimen/now_playing_album_height"
+                android:layout_margin="@dimen/now_playing_album_margin"
+                android:contentDescription="@string/now_playing_album"
                 android:src="@drawable/empty_black" />
 
             <TextView
                 android:id="@+id/now_playing_song"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/now_playing_album"
                 android:text="@string/now_playing_song_title" />
 
             <TextView
+                android:id="@+id/now_playing_artist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/now_playing_song"
@@ -43,10 +45,11 @@
                 android:text="@string/greyhaven" />
 
             <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
+                android:layout_width="@dimen/now_playing_button_width"
+                android:layout_height="@dimen/now_playing_button_height"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
+                android:contentDescription="@string/now_playing_play_button"
                 android:src="@drawable/play_button" />
 
         </RelativeLayout>
@@ -55,23 +58,21 @@
 
     <ScrollView
         android:id="@+id/scroll_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="@dimen/activity_vertical_margin">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <RelativeLayout
@@ -82,8 +83,9 @@
 
                     <ImageView
                         android:id="@+id/one_of_us_is_the_killer_image_view"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
+                        android:layout_width="@dimen/album_width"
+                        android:layout_height="@dimen/album_height"
+                        android:contentDescription="@string/one_of_us_is_the_killer_content_desc"
                         android:scaleType="centerCrop"
                         android:src="@drawable/one_of_us_is_the_killer" />
 
@@ -93,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/one_of_us_is_the_killer_image_view"
                         android:text="@string/one_of_us_is_the_killer"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
 
                     <TextView
@@ -102,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/one_of_us_is_the_killer_text_view"
                         android:text="@string/the_dillinger_escape_plan"
-                        android:textSize="10sp" />
+                        android:textSize="@dimen/text_size_small" />
 
                 </RelativeLayout>
 
@@ -113,8 +115,9 @@
 
                     <ImageView
                         android:id="@+id/diamond_eyes_image_view"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
+                        android:layout_width="@dimen/album_width"
+                        android:layout_height="@dimen/album_height"
+                        android:contentDescription="@string/diamond_eyes_content_desc"
                         android:scaleType="centerCrop"
                         android:src="@drawable/diamond_eyes" />
 
@@ -125,7 +128,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_below="@id/diamond_eyes_image_view"
                         android:text="@string/diamond_eyes"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
 
                     <TextView
@@ -134,17 +137,16 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/diamond_eyes_text_view"
                         android:text="@string/deftones"
-                        android:textSize="10sp" />
+                        android:textSize="@dimen/text_size_small" />
 
                 </RelativeLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <RelativeLayout
@@ -155,8 +157,9 @@
 
                     <ImageView
                         android:id="@+id/empty_black_image_view"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
+                        android:layout_width="@dimen/album_width"
+                        android:layout_height="@dimen/album_height"
+                        android:contentDescription="@string/empty_black_content_desc"
                         android:scaleType="centerCrop"
                         android:src="@drawable/empty_black" />
 
@@ -167,7 +170,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_below="@id/empty_black_image_view"
                         android:text="@string/empty_black"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
 
                     <TextView
@@ -176,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/empty_black_text_view"
                         android:text="@string/greyhaven"
-                        android:textSize="10sp" />
+                        android:textSize="@dimen/text_size_small" />
 
                 </RelativeLayout>
 
@@ -187,8 +190,9 @@
 
                     <ImageView
                         android:id="@+id/meridional_image_view"
-                        android:layout_width="160dp"
-                        android:layout_height="160dp"
+                        android:layout_width="@dimen/album_width"
+                        android:layout_height="@dimen/album_height"
+                        android:contentDescription="@string/meridional_content_desc"
                         android:scaleType="centerCrop"
                         android:src="@drawable/meridional" />
 
@@ -199,7 +203,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_below="@id/meridional_image_view"
                         android:text="@string/meridional"
-                        android:textSize="14sp"
+                        android:textSize="@dimen/text_size_medium"
                         android:textStyle="bold" />
 
                     <TextView
@@ -208,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/meridional_text_view"
                         android:text="@string/norma_jean"
-                        android:textSize="10sp" />
+                        android:textSize="@dimen/text_size_small" />
 
                 </RelativeLayout>
 

@@ -2,12 +2,29 @@
 
 <resources>
 
-    <!-- Height of each album -->
-    <dimen name="album_height">88dp</dimen>
-
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Dimensions for CardView -->
+    <dimen name="card_elevation">8dp</dimen>
+
+    <!-- Font Sizes -->
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+
+    <!-- Dimensions for Now Playing album ImageView -->
+    <dimen name="now_playing_album_width">56dp</dimen>
+    <dimen name="now_playing_album_height">56dp</dimen>
+    <dimen name="now_playing_album_margin">16dp</dimen>
+
+    <!-- Dimensions for Now Playing play button ImageView -->
+    <dimen name="now_playing_button_width">56dp</dimen>
+    <dimen name="now_playing_button_height">56dp</dimen>
+
+    <!-- Dimensions for My Library album covers -->
+    <dimen name="album_height">160dp</dimen>
+    <dimen name="album_width">160dp</dimen>
 
 </resources>
 
